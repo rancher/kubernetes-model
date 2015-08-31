@@ -1,0 +1,11 @@
+package model
+
+const (
+    {{.typeUpper}}_TYPE = "{{.model.ID}}"
+)
+
+type {{.typeCapitalized}} struct {
+    {{range $key, $value := .structFields}}
+    {{$key}} {{$value}} `json:"{{$key | toLowerCamelCase }},omitempty" yaml:"{{$key | toLowerUnderscore }},omitempty"`
+    {{end}}
+}
