@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	_ "github.com/rancher/go-kubernetes-model/model"
+	_ "github.com/rancher/kubernetes-model/model"
 )
 
 func main() {

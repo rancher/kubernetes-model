@@ -11,7 +11,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/rancher/go-kubernetes-client/model"
+	"github.com/rancher/kubernetes-model/model"
 )
 
 const (
