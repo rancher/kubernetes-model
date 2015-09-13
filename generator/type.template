@@ -4,8 +4,12 @@ const (
     {{.typeUpper}}_TYPE = "{{.model.ID}}"
 )
 
+{{if eq (len .structFields) 0}}
+type {{.typeCapitalized}} string
+{{else}}
 type {{.typeCapitalized}} struct {
     {{range $key, $value := .structFields}}
     {{$key}} {{$value}} `json:"{{$key | toLowerCamelCase }},omitempty" yaml:"{{$key | toLowerUnderscore }},omitempty"`
     {{end}}
 }
+{{end}}

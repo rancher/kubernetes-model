@@ -4,5 +4,4 @@ const (
 	PATCH_TYPE = "api.Patch"
 )
 
-type Patch struct {
-}
+type Patch string

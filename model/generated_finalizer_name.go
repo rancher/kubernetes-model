@@ -4,5 +4,4 @@ const (
 	FINALIZER_NAME_TYPE = "v1.FinalizerName"
 )
 
-type FinalizerName struct {
-}
+type FinalizerName string
