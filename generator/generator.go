@@ -29,7 +29,8 @@ var (
 		"boolean": "bool",
 	}
 	typeConversionOverrides = map[string]string{
-		"WatchEvent.Object": "interface{}",
+		"WatchEvent.Object":      "interface{}",
+		"ServicePort.TargetPort": "interface{}",
 	}
 )
 

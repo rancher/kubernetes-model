@@ -13,5 +13,5 @@ type ServicePort struct {
 
 	Protocol string `json:"protocol,omitempty" yaml:"protocol,omitempty"`
 
-	TargetPort string `json:"targetPort,omitempty" yaml:"target_port,omitempty"`
+	TargetPort interface{} `json:"targetPort,omitempty" yaml:"target_port,omitempty"`
 }
