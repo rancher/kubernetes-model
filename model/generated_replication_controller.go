@@ -9,9 +9,9 @@ type ReplicationController struct {
 
 	Kind string `json:"kind,omitempty" yaml:"kind,omitempty"`
 
-	Metadata ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
+	Metadata *ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
 
-	Spec ReplicationControllerSpec `json:"spec,omitempty" yaml:"spec,omitempty"`
+	Spec *ReplicationControllerSpec `json:"spec,omitempty" yaml:"spec,omitempty"`
 
-	Status ReplicationControllerStatus `json:"status,omitempty" yaml:"status,omitempty"`
+	Status *ReplicationControllerStatus `json:"status,omitempty" yaml:"status,omitempty"`
 }

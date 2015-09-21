@@ -11,7 +11,7 @@ type ContainerStatus struct {
 
 	ImageID string `json:"imageID,omitempty" yaml:"image_id,omitempty"`
 
-	LastState ContainerState `json:"lastState,omitempty" yaml:"last_state,omitempty"`
+	LastState *ContainerState `json:"lastState,omitempty" yaml:"last_state,omitempty"`
 
 	Name string `json:"name,omitempty" yaml:"name,omitempty"`
 
@@ -19,5 +19,5 @@ type ContainerStatus struct {
 
 	RestartCount int32 `json:"restartCount,omitempty" yaml:"restart_count,omitempty"`
 
-	State ContainerState `json:"state,omitempty" yaml:"state,omitempty"`
+	State *ContainerState `json:"state,omitempty" yaml:"state,omitempty"`
 }

@@ -9,5 +9,5 @@ type ReplicationControllerSpec struct {
 
 	Selector map[string]interface{} `json:"selector,omitempty" yaml:"selector,omitempty"`
 
-	Template PodTemplateSpec `json:"template,omitempty" yaml:"template,omitempty"`
+	Template *PodTemplateSpec `json:"template,omitempty" yaml:"template,omitempty"`
 }

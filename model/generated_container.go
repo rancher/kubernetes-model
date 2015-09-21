@@ -15,19 +15,19 @@ type Container struct {
 
 	ImagePullPolicy string `json:"imagePullPolicy,omitempty" yaml:"image_pull_policy,omitempty"`
 
-	Lifecycle Lifecycle `json:"lifecycle,omitempty" yaml:"lifecycle,omitempty"`
+	Lifecycle *Lifecycle `json:"lifecycle,omitempty" yaml:"lifecycle,omitempty"`
 
-	LivenessProbe Probe `json:"livenessProbe,omitempty" yaml:"liveness_probe,omitempty"`
+	LivenessProbe *Probe `json:"livenessProbe,omitempty" yaml:"liveness_probe,omitempty"`
 
 	Name string `json:"name,omitempty" yaml:"name,omitempty"`
 
 	Ports []ContainerPort `json:"ports,omitempty" yaml:"ports,omitempty"`
 
-	ReadinessProbe Probe `json:"readinessProbe,omitempty" yaml:"readiness_probe,omitempty"`
+	ReadinessProbe *Probe `json:"readinessProbe,omitempty" yaml:"readiness_probe,omitempty"`
 
-	Resources ResourceRequirements `json:"resources,omitempty" yaml:"resources,omitempty"`
+	Resources *ResourceRequirements `json:"resources,omitempty" yaml:"resources,omitempty"`
 
-	SecurityContext SecurityContext `json:"securityContext,omitempty" yaml:"security_context,omitempty"`
+	SecurityContext *SecurityContext `json:"securityContext,omitempty" yaml:"security_context,omitempty"`
 
 	TerminationMessagePath string `json:"terminationMessagePath,omitempty" yaml:"termination_message_path,omitempty"`
 

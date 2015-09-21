@@ -9,9 +9,9 @@ type PersistentVolumeClaim struct {
 
 	Kind string `json:"kind,omitempty" yaml:"kind,omitempty"`
 
-	Metadata ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
+	Metadata *ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
 
-	Spec PersistentVolumeClaimSpec `json:"spec,omitempty" yaml:"spec,omitempty"`
+	Spec *PersistentVolumeClaimSpec `json:"spec,omitempty" yaml:"spec,omitempty"`
 
-	Status PersistentVolumeClaimStatus `json:"status,omitempty" yaml:"status,omitempty"`
+	Status *PersistentVolumeClaimStatus `json:"status,omitempty" yaml:"status,omitempty"`
 }

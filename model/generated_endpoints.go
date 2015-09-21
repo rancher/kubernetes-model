@@ -9,7 +9,7 @@ type Endpoints struct {
 
 	Kind string `json:"kind,omitempty" yaml:"kind,omitempty"`
 
-	Metadata ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
+	Metadata *ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
 
 	Subsets []EndpointSubset `json:"subsets,omitempty" yaml:"subsets,omitempty"`
 }

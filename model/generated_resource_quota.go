@@ -9,9 +9,9 @@ type ResourceQuota struct {
 
 	Kind string `json:"kind,omitempty" yaml:"kind,omitempty"`
 
-	Metadata ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
+	Metadata *ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
 
-	Spec ResourceQuotaSpec `json:"spec,omitempty" yaml:"spec,omitempty"`
+	Spec *ResourceQuotaSpec `json:"spec,omitempty" yaml:"spec,omitempty"`
 
-	Status ResourceQuotaStatus `json:"status,omitempty" yaml:"status,omitempty"`
+	Status *ResourceQuotaStatus `json:"status,omitempty" yaml:"status,omitempty"`
 }

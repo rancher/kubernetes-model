@@ -7,7 +7,7 @@ const (
 type PersistentVolumeClaimSpec struct {
 	AccessModes []PersistentVolumeAccessMode `json:"accessModes,omitempty" yaml:"access_modes,omitempty"`
 
-	Resources ResourceRequirements `json:"resources,omitempty" yaml:"resources,omitempty"`
+	Resources *ResourceRequirements `json:"resources,omitempty" yaml:"resources,omitempty"`
 
 	VolumeName string `json:"volumeName,omitempty" yaml:"volume_name,omitempty"`
 }

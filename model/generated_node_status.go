@@ -11,7 +11,7 @@ type NodeStatus struct {
 
 	Conditions []NodeCondition `json:"conditions,omitempty" yaml:"conditions,omitempty"`
 
-	NodeInfo NodeSystemInfo `json:"nodeInfo,omitempty" yaml:"node_info,omitempty"`
+	NodeInfo *NodeSystemInfo `json:"nodeInfo,omitempty" yaml:"node_info,omitempty"`
 
 	Phase string `json:"phase,omitempty" yaml:"phase,omitempty"`
 }

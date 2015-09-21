@@ -9,9 +9,9 @@ type Service struct {
 
 	Kind string `json:"kind,omitempty" yaml:"kind,omitempty"`
 
-	Metadata ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
+	Metadata *ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
 
-	Spec ServiceSpec `json:"spec,omitempty" yaml:"spec,omitempty"`
+	Spec *ServiceSpec `json:"spec,omitempty" yaml:"spec,omitempty"`
 
-	Status ServiceStatus `json:"status,omitempty" yaml:"status,omitempty"`
+	Status *ServiceStatus `json:"status,omitempty" yaml:"status,omitempty"`
 }

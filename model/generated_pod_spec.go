@@ -21,6 +21,8 @@ type PodSpec struct {
 
 	RestartPolicy string `json:"restartPolicy,omitempty" yaml:"restart_policy,omitempty"`
 
+	ServiceAccount string `json:"serviceAccount,omitempty" yaml:"service_account,omitempty"`
+
 	ServiceAccountName string `json:"serviceAccountName,omitempty" yaml:"service_account_name,omitempty"`
 
 	TerminationGracePeriodSeconds int64 `json:"terminationGracePeriodSeconds,omitempty" yaml:"termination_grace_period_seconds,omitempty"`

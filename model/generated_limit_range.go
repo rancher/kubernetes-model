@@ -9,7 +9,7 @@ type LimitRange struct {
 
 	Kind string `json:"kind,omitempty" yaml:"kind,omitempty"`
 
-	Metadata ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
+	Metadata *ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
 
-	Spec LimitRangeSpec `json:"spec,omitempty" yaml:"spec,omitempty"`
+	Spec *LimitRangeSpec `json:"spec,omitempty" yaml:"spec,omitempty"`
 }

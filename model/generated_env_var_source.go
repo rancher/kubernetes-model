@@ -5,5 +5,5 @@ const (
 )
 
 type EnvVarSource struct {
-	FieldRef ObjectFieldSelector `json:"fieldRef,omitempty" yaml:"field_ref,omitempty"`
+	FieldRef *ObjectFieldSelector `json:"fieldRef,omitempty" yaml:"field_ref,omitempty"`
 }
