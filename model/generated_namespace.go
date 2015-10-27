@@ -9,9 +9,9 @@ type Namespace struct {
 
 	Kind string `json:"kind,omitempty" yaml:"kind,omitempty"`
 
-	Metadata ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
+	Metadata *ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
 
-	Spec NamespaceSpec `json:"spec,omitempty" yaml:"spec,omitempty"`
+	Spec *NamespaceSpec `json:"spec,omitempty" yaml:"spec,omitempty"`
 
-	Status NamespaceStatus `json:"status,omitempty" yaml:"status,omitempty"`
+	Status *NamespaceStatus `json:"status,omitempty" yaml:"status,omitempty"`
 }

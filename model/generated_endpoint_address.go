@@ -7,5 +7,5 @@ const (
 type EndpointAddress struct {
 	Ip string `json:"ip,omitempty" yaml:"ip,omitempty"`
 
-	TargetRef ObjectReference `json:"targetRef,omitempty" yaml:"target_ref,omitempty"`
+	TargetRef *ObjectReference `json:"targetRef,omitempty" yaml:"target_ref,omitempty"`
 }

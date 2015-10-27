@@ -5,7 +5,7 @@ const (
 )
 
 type PodTemplateSpec struct {
-	Metadata ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
+	Metadata *ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
 
-	Spec PodSpec `json:"spec,omitempty" yaml:"spec,omitempty"`
+	Spec *PodSpec `json:"spec,omitempty" yaml:"spec,omitempty"`
 }

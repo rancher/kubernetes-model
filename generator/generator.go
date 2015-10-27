@@ -130,7 +130,7 @@ func getTypeMap(modelResource model.Model, modelType string) map[string]string {
 				result[fieldName] = prop.Type
 			}
 		} else if prop.Ref != "" {
-			result[fieldName] = stripVersion(prop.Ref)
+			result[fieldName] = "*" + stripVersion(prop.Ref)
 		}
 
 		if _, ok := result[fieldName]; !ok {

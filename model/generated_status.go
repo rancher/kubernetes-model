@@ -9,13 +9,13 @@ type Status struct {
 
 	Code int32 `json:"code,omitempty" yaml:"code,omitempty"`
 
-	Details StatusDetails `json:"details,omitempty" yaml:"details,omitempty"`
+	Details *StatusDetails `json:"details,omitempty" yaml:"details,omitempty"`
 
 	Kind string `json:"kind,omitempty" yaml:"kind,omitempty"`
 
 	Message string `json:"message,omitempty" yaml:"message,omitempty"`
 
-	Metadata ListMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
+	Metadata *ListMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
 
 	Reason string `json:"reason,omitempty" yaml:"reason,omitempty"`
 

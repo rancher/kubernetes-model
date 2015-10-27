@@ -11,7 +11,7 @@ type Event struct {
 
 	FirstTimestamp string `json:"firstTimestamp,omitempty" yaml:"first_timestamp,omitempty"`
 
-	InvolvedObject ObjectReference `json:"involvedObject,omitempty" yaml:"involved_object,omitempty"`
+	InvolvedObject *ObjectReference `json:"involvedObject,omitempty" yaml:"involved_object,omitempty"`
 
 	Kind string `json:"kind,omitempty" yaml:"kind,omitempty"`
 
@@ -19,9 +19,9 @@ type Event struct {
 
 	Message string `json:"message,omitempty" yaml:"message,omitempty"`
 
-	Metadata ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
+	Metadata *ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
 
 	Reason string `json:"reason,omitempty" yaml:"reason,omitempty"`
 
-	Source EventSource `json:"source,omitempty" yaml:"source,omitempty"`
+	Source *EventSource `json:"source,omitempty" yaml:"source,omitempty"`
 }

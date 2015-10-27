@@ -9,9 +9,9 @@ type Pod struct {
 
 	Kind string `json:"kind,omitempty" yaml:"kind,omitempty"`
 
-	Metadata ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
+	Metadata *ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
 
-	Spec PodSpec `json:"spec,omitempty" yaml:"spec,omitempty"`
+	Spec *PodSpec `json:"spec,omitempty" yaml:"spec,omitempty"`
 
-	Status PodStatus `json:"status,omitempty" yaml:"status,omitempty"`
+	Status *PodStatus `json:"status,omitempty" yaml:"status,omitempty"`
 }

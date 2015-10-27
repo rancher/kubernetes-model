@@ -9,5 +9,5 @@ type EnvVar struct {
 
 	Value string `json:"value,omitempty" yaml:"value,omitempty"`
 
-	ValueFrom EnvVarSource `json:"valueFrom,omitempty" yaml:"value_from,omitempty"`
+	ValueFrom *EnvVarSource `json:"valueFrom,omitempty" yaml:"value_from,omitempty"`
 }

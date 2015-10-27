@@ -17,7 +17,7 @@ type RBDVolumeSource struct {
 
 	ReadOnly bool `json:"readOnly,omitempty" yaml:"read_only,omitempty"`
 
-	SecretRef LocalObjectReference `json:"secretRef,omitempty" yaml:"secret_ref,omitempty"`
+	SecretRef *LocalObjectReference `json:"secretRef,omitempty" yaml:"secret_ref,omitempty"`
 
 	User string `json:"user,omitempty" yaml:"user,omitempty"`
 }

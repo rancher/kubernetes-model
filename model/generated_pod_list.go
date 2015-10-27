@@ -11,5 +11,5 @@ type PodList struct {
 
 	Kind string `json:"kind,omitempty" yaml:"kind,omitempty"`
 
-	Metadata ListMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
+	Metadata *ListMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
 }

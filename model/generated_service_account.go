@@ -11,7 +11,7 @@ type ServiceAccount struct {
 
 	Kind string `json:"kind,omitempty" yaml:"kind,omitempty"`
 
-	Metadata ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
+	Metadata *ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
 
 	Secrets []ObjectReference `json:"secrets,omitempty" yaml:"secrets,omitempty"`
 }

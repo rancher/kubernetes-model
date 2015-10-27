@@ -9,9 +9,9 @@ type Node struct {
 
 	Kind string `json:"kind,omitempty" yaml:"kind,omitempty"`
 
-	Metadata ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
+	Metadata *ObjectMeta `json:"metadata,omitempty" yaml:"metadata,omitempty"`
 
-	Spec NodeSpec `json:"spec,omitempty" yaml:"spec,omitempty"`
+	Spec *NodeSpec `json:"spec,omitempty" yaml:"spec,omitempty"`
 
-	Status NodeStatus `json:"status,omitempty" yaml:"status,omitempty"`
+	Status *NodeStatus `json:"status,omitempty" yaml:"status,omitempty"`
 }
