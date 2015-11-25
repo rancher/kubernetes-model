@@ -1,7 +1,7 @@
 package model
 
 const (
-	STATUS_DETAILS_TYPE = "v1.StatusDetails"
+	STATUS_DETAILS_TYPE = "unversioned.StatusDetails"
 )
 
 type StatusDetails struct {

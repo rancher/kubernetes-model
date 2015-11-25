@@ -31,6 +31,7 @@ var (
 	typeConversionOverrides = map[string]string{
 		"WatchEvent.Object":      "interface{}",
 		"ServicePort.TargetPort": "interface{}",
+		"HTTPGetAction.Port":     "int32",
 	}
 )
 

@@ -9,6 +9,8 @@ type ObjectMeta struct {
 
 	CreationTimestamp string `json:"creationTimestamp,omitempty" yaml:"creation_timestamp,omitempty"`
 
+	DeletionGracePeriodSeconds int64 `json:"deletionGracePeriodSeconds,omitempty" yaml:"deletion_grace_period_seconds,omitempty"`
+
 	DeletionTimestamp string `json:"deletionTimestamp,omitempty" yaml:"deletion_timestamp,omitempty"`
 
 	GenerateName string `json:"generateName,omitempty" yaml:"generate_name,omitempty"`

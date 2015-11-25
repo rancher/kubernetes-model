@@ -7,7 +7,15 @@ const (
 type Volume struct {
 	AwsElasticBlockStore *AWSElasticBlockStoreVolumeSource `json:"awsElasticBlockStore,omitempty" yaml:"aws_elastic_block_store,omitempty"`
 
+	Cephfs *CephFSVolumeSource `json:"cephfs,omitempty" yaml:"cephfs,omitempty"`
+
+	Cinder *CinderVolumeSource `json:"cinder,omitempty" yaml:"cinder,omitempty"`
+
+	DownwardAPI *DownwardAPIVolumeSource `json:"downwardAPI,omitempty" yaml:"downward_api,omitempty"`
+
 	EmptyDir *EmptyDirVolumeSource `json:"emptyDir,omitempty" yaml:"empty_dir,omitempty"`
+
+	Fc *FCVolumeSource `json:"fc,omitempty" yaml:"fc,omitempty"`
 
 	GcePersistentDisk *GCEPersistentDiskVolumeSource `json:"gcePersistentDisk,omitempty" yaml:"gce_persistent_disk,omitempty"`
 

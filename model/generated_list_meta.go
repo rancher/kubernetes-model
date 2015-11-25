@@ -1,7 +1,7 @@
 package model
 
 const (
-	LIST_META_TYPE = "v1.ListMeta"
+	LIST_META_TYPE = "unversioned.ListMeta"
 )
 
 type ListMeta struct {

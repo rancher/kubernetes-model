@@ -7,5 +7,7 @@ const (
 type EndpointSubset struct {
 	Addresses []EndpointAddress `json:"addresses,omitempty" yaml:"addresses,omitempty"`
 
+	NotReadyAddresses []EndpointAddress `json:"notReadyAddresses,omitempty" yaml:"not_ready_addresses,omitempty"`
+
 	Ports []EndpointPort `json:"ports,omitempty" yaml:"ports,omitempty"`
 }
