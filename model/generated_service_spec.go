@@ -9,6 +9,10 @@ type ServiceSpec struct {
 
 	DeprecatedPublicIPs []string `json:"deprecatedPublicIPs,omitempty" yaml:"deprecated_public_ips,omitempty"`
 
+	ExternalIPs []string `json:"externalIPs,omitempty" yaml:"external_ips,omitempty"`
+
+	LoadBalancerIP string `json:"loadBalancerIP,omitempty" yaml:"load_balancer_ip,omitempty"`
+
 	Ports []ServicePort `json:"ports,omitempty" yaml:"ports,omitempty"`
 
 	Selector map[string]interface{} `json:"selector,omitempty" yaml:"selector,omitempty"`

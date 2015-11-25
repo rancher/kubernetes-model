@@ -11,7 +11,13 @@ type PersistentVolumeSpec struct {
 
 	Capacity map[string]interface{} `json:"capacity,omitempty" yaml:"capacity,omitempty"`
 
+	Cephfs *CephFSVolumeSource `json:"cephfs,omitempty" yaml:"cephfs,omitempty"`
+
+	Cinder *CinderVolumeSource `json:"cinder,omitempty" yaml:"cinder,omitempty"`
+
 	ClaimRef *ObjectReference `json:"claimRef,omitempty" yaml:"claim_ref,omitempty"`
+
+	Fc *FCVolumeSource `json:"fc,omitempty" yaml:"fc,omitempty"`
 
 	GcePersistentDisk *GCEPersistentDiskVolumeSource `json:"gcePersistentDisk,omitempty" yaml:"gce_persistent_disk,omitempty"`
 

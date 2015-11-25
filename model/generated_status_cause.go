@@ -1,7 +1,7 @@
 package model
 
 const (
-	STATUS_CAUSE_TYPE = "v1.StatusCause"
+	STATUS_CAUSE_TYPE = "unversioned.StatusCause"
 )
 
 type StatusCause struct {

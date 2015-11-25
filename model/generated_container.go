@@ -29,7 +29,11 @@ type Container struct {
 
 	SecurityContext *SecurityContext `json:"securityContext,omitempty" yaml:"security_context,omitempty"`
 
+	Stdin bool `json:"stdin,omitempty" yaml:"stdin,omitempty"`
+
 	TerminationMessagePath string `json:"terminationMessagePath,omitempty" yaml:"termination_message_path,omitempty"`
+
+	Tty bool `json:"tty,omitempty" yaml:"tty,omitempty"`
 
 	VolumeMounts []VolumeMount `json:"volumeMounts,omitempty" yaml:"volume_mounts,omitempty"`
 

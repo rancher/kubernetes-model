@@ -9,6 +9,8 @@ type SecurityContext struct {
 
 	Privileged bool `json:"privileged,omitempty" yaml:"privileged,omitempty"`
 
+	RunAsNonRoot bool `json:"runAsNonRoot,omitempty" yaml:"run_as_non_root,omitempty"`
+
 	RunAsUser int64 `json:"runAsUser,omitempty" yaml:"run_as_user,omitempty"`
 
 	SeLinuxOptions *SELinuxOptions `json:"seLinuxOptions,omitempty" yaml:"se_linux_options,omitempty"`

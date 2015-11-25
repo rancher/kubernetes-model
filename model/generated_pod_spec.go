@@ -11,7 +11,11 @@ type PodSpec struct {
 
 	DnsPolicy string `json:"dnsPolicy,omitempty" yaml:"dns_policy,omitempty"`
 
+	HostIPC bool `json:"hostIPC,omitempty" yaml:"host_ipc,omitempty"`
+
 	HostNetwork bool `json:"hostNetwork,omitempty" yaml:"host_network,omitempty"`
+
+	HostPID bool `json:"hostPID,omitempty" yaml:"host_pid,omitempty"`
 
 	ImagePullSecrets []LocalObjectReference `json:"imagePullSecrets,omitempty" yaml:"image_pull_secrets,omitempty"`
 

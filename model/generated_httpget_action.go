@@ -9,7 +9,7 @@ type HTTPGetAction struct {
 
 	Path string `json:"path,omitempty" yaml:"path,omitempty"`
 
-	Port string `json:"port,omitempty" yaml:"port,omitempty"`
+	Port int32 `json:"port,omitempty" yaml:"port,omitempty"`
 
 	Scheme string `json:"scheme,omitempty" yaml:"scheme,omitempty"`
 }
