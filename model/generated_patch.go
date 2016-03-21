@@ -1,7 +1,7 @@
 package model
 
 const (
-	PATCH_TYPE = "api.Patch"
+	PATCH_TYPE = "unversioned.Patch"
 )
 
 type Patch string

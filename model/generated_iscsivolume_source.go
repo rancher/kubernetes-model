@@ -9,6 +9,8 @@ type ISCSIVolumeSource struct {
 
 	Iqn string `json:"iqn,omitempty" yaml:"iqn,omitempty"`
 
+	IscsiInterface string `json:"iscsiInterface,omitempty" yaml:"iscsi_interface,omitempty"`
+
 	Lun int32 `json:"lun,omitempty" yaml:"lun,omitempty"`
 
 	ReadOnly bool `json:"readOnly,omitempty" yaml:"read_only,omitempty"`

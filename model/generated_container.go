@@ -31,6 +31,8 @@ type Container struct {
 
 	Stdin bool `json:"stdin,omitempty" yaml:"stdin,omitempty"`
 
+	StdinOnce bool `json:"stdinOnce,omitempty" yaml:"stdin_once,omitempty"`
+
 	TerminationMessagePath string `json:"terminationMessagePath,omitempty" yaml:"termination_message_path,omitempty"`
 
 	Tty bool `json:"tty,omitempty" yaml:"tty,omitempty"`

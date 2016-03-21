@@ -29,9 +29,11 @@ var (
 		"boolean": "bool",
 	}
 	typeConversionOverrides = map[string]string{
-		"WatchEvent.Object":      "interface{}",
-		"ServicePort.TargetPort": "interface{}",
-		"HTTPGetAction.Port":     "int32",
+		"WatchEvent.Object":                     "interface{}",
+		"ServicePort.TargetPort":                "interface{}",
+		"HTTPGetAction.Port":                    "interface{}",
+		"TCPSocketAction.Port":                  "interface{}",
+		"PodSecurityContext.SupplementalGroups": "[]int64",
 	}
 )
 

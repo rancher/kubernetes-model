@@ -9,6 +9,8 @@ type PersistentVolumeSpec struct {
 
 	AwsElasticBlockStore *AWSElasticBlockStoreVolumeSource `json:"awsElasticBlockStore,omitempty" yaml:"aws_elastic_block_store,omitempty"`
 
+	AzureFile *AzureFileVolumeSource `json:"azureFile,omitempty" yaml:"azure_file,omitempty"`
+
 	Capacity map[string]interface{} `json:"capacity,omitempty" yaml:"capacity,omitempty"`
 
 	Cephfs *CephFSVolumeSource `json:"cephfs,omitempty" yaml:"cephfs,omitempty"`
@@ -18,6 +20,10 @@ type PersistentVolumeSpec struct {
 	ClaimRef *ObjectReference `json:"claimRef,omitempty" yaml:"claim_ref,omitempty"`
 
 	Fc *FCVolumeSource `json:"fc,omitempty" yaml:"fc,omitempty"`
+
+	FlexVolume *FlexVolumeSource `json:"flexVolume,omitempty" yaml:"flex_volume,omitempty"`
+
+	Flocker *FlockerVolumeSource `json:"flocker,omitempty" yaml:"flocker,omitempty"`
 
 	GcePersistentDisk *GCEPersistentDiskVolumeSource `json:"gcePersistentDisk,omitempty" yaml:"gce_persistent_disk,omitempty"`
 
