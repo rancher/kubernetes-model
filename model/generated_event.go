@@ -24,4 +24,6 @@ type Event struct {
 	Reason string `json:"reason,omitempty" yaml:"reason,omitempty"`
 
 	Source *EventSource `json:"source,omitempty" yaml:"source,omitempty"`
+
+	Type string `json:"type,omitempty" yaml:"type,omitempty"`
 }

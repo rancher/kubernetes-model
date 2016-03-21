@@ -5,5 +5,5 @@ const (
 )
 
 type TCPSocketAction struct {
-	Port string `json:"port,omitempty" yaml:"port,omitempty"`
+	Port interface{} `json:"port,omitempty" yaml:"port,omitempty"`
 }

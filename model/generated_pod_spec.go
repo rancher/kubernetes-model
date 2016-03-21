@@ -25,6 +25,8 @@ type PodSpec struct {
 
 	RestartPolicy string `json:"restartPolicy,omitempty" yaml:"restart_policy,omitempty"`
 
+	SecurityContext *PodSecurityContext `json:"securityContext,omitempty" yaml:"security_context,omitempty"`
+
 	ServiceAccount string `json:"serviceAccount,omitempty" yaml:"service_account,omitempty"`
 
 	ServiceAccountName string `json:"serviceAccountName,omitempty" yaml:"service_account_name,omitempty"`

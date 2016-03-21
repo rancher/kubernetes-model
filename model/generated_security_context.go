@@ -9,6 +9,8 @@ type SecurityContext struct {
 
 	Privileged bool `json:"privileged,omitempty" yaml:"privileged,omitempty"`
 
+	ReadOnlyRootFilesystem bool `json:"readOnlyRootFilesystem,omitempty" yaml:"read_only_root_filesystem,omitempty"`
+
 	RunAsNonRoot bool `json:"runAsNonRoot,omitempty" yaml:"run_as_non_root,omitempty"`
 
 	RunAsUser int64 `json:"runAsUser,omitempty" yaml:"run_as_user,omitempty"`
